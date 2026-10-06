@@ -1,0 +1,5 @@
+# Shell scripts must stay LF: they are packaged into Docker images and run
+# under busybox/distroless sh, which fails on CRLF ("unexpected word
+# (expecting do)"). Prevents Windows checkouts (core.autocrlf=true) from
+# breaking the dev docker build.
+*.sh text eol=lf

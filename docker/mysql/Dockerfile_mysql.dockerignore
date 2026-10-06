@@ -1,0 +1,8 @@
+# Allowlist-style ignore for docker/mysql/Dockerfile_mysql: the build context is
+# the repo root, which otherwise carries ~4.5 GB (.git + UI node_modules) that
+# this Dockerfile never COPYs.
+**
+
+!docker/
+!docker/mysql/
+!docker/mysql/mysql-script.sql

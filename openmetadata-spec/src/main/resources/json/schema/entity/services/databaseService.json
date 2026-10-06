@@ -142,6 +142,9 @@
           "name": "Clickhouse"
         },
         {
+          "name": "Clickzetta"
+        },
+        {
           "name": "Databricks"
         },
         {

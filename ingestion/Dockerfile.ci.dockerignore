@@ -1,0 +1,8 @@
+# Denylist for ingestion/Dockerfile.ci (build context is the repo root):
+# keep the heavy directories the Dockerfile never COPYs out of the context —
+# .git alone is ~2.9 GB, the UI node_modules ~1.6 GB. Everything the Dockerfile
+# COPYs (ingestion/, openmetadata-spec/, openmetadata-airflow-apis/, scripts/)
+# stays included.
+.git/
+**/node_modules/
+docker/development/docker-volume/
